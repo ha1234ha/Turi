@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T4c-V5-WXv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ホーム-->
+        <scene sceneID="xYz-n0-TW6">
+            <objects>
+                <viewController id="T4c-V5-WXv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gz6-ab-xHo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGO-Pn-9Ut" customClass="CustomToolBar" customModule="Turi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <barButtonItem title="調整" id="R2W-uP-JHc"/>
+                                    <barButtonItem width="28" style="plain" systemItem="fixedSpace" id="Apk-6e-Wik"/>
+                                    <barButtonItem title="検索" id="cdR-uU-GbT"/>
+                                </items>
+                                <color key="tintColor" red="1" green="0.74175340026063052" blue="0.68144283120228843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89244128379307686" green="1" blue="0.94092046132491092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XGO-Pn-9Ut" firstAttribute="top" secondItem="cTC-pq-Puh" secondAttribute="top" id="Bda-F0-ZZX"/>
+                            <constraint firstItem="XGO-Pn-9Ut" firstAttribute="trailing" secondItem="cTC-pq-Puh" secondAttribute="trailing" id="lOC-Aa-q1G"/>
+                            <constraint firstItem="XGO-Pn-9Ut" firstAttribute="leading" secondItem="cTC-pq-Puh" secondAttribute="leading" id="yqi-f2-tui"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cTC-pq-Puh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="turihome" id="ogX-ii-8Ws"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2L-Dh-ADi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="171"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="turihome" width="24" height="24"/>
+    </resources>
+</document>
